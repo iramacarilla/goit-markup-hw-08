@@ -66,15 +66,14 @@ display: flex;}
     
 }
 .footer .main-button{
-    display: flex;
-    align-content: center;
-    margin: 0 140px;
-    @media screen and (min-width:768px){
+   
     display: block;
     margin: 0 auto;
-    @media screen and (min-width:1200px){
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        align-content: center;
         margin-left: 0;
         margin-right: 0;
         }
     }
-}

@@ -13,21 +13,23 @@
     }
     }
     .adventages__icon-set 
-    {   
-       // width: 270px;
-       // height: 120px;
-        //margin-bottom: 30px;
-    padding: 25px 190px;    
+    { 
+    padding: 25px 0px;  
+    width: 100%;  
     background: #F5F4FA;
     border-radius: 4px;
-     @media screen and (min-width: 768px) {
-     padding: 25px 144px;
-    }
-    @media screen and (min-width: 1200px) {
-     padding: 25px 100px;   
-    }
+    // @media screen and (min-width: 768px) {
+     //padding: 25px px;
+    // width: 100%;
+    //}
+    //@media screen and (min-width: 1200px) {
+    // padding: 25px 0px;
+    // width: 100%;   
+    //}
     }
     .adventage__icon {
+        display: block;
+        margin: 0 auto;
         width: 70px;
         height: 70px;
     }
