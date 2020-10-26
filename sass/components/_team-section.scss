@@ -1,0 +1,55 @@
+.section.team{
+    background-color: $button-color;
+}
+.team__list {
+    @extend %list;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.team__list-members{
+    text-align: center;
+
+    background-color: $white-color;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3);
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc(( 100% - 30px )/2);
+    &:not(:nth-child(2n)) {
+        margin-right: 30px;
+        }
+    &:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+    }
+}
+    @media screen and (min-width: $desktop) {
+        width: calc(( 100% - 90px )/4);
+        &:not(:nth-child(4n)) {
+            margin-right: 30px;
+        }
+        margin-bottom: 0;
+    }
+}
+
+
+.team__describing-members{
+    margin: 30px 32px;
+}
+.team__name-members {
+    margin-bottom: 10px;
+
+    color: $titel-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    }
+
+.team__members-occupation {
+    color: $main-color;
+
+    font-size: 16px;
+    line-height: 1.19;
+}

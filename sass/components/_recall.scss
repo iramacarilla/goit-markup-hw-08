@@ -1,0 +1,35 @@
+.footer .social-icon__link{
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   background-color:rgba(255, 255, 255, 0.1);
+}
+.footer .social-icon__link:hover {
+    background-color: $brand-color;
+}
+.footer .socialicons-content
+{
+    fill: $white-color;
+}
+.recall{
+text-align: center;
+@media screen and (min-width: 1200px){
+margin-right: 93px;        
+    }
+}
+.recall-word {
+    margin-bottom: 20px;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px){
+        margin-top: 0;
+    }
+
+    text-align: center;
+    @media screen and (min-width: 1200px){
+        text-align: left;        
+    }
+    font-weight: 700;
+    color: $white-color;
+    line-height: 0,853;
+    text-transform: uppercase;
+}

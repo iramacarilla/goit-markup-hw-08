@@ -1,0 +1,78 @@
+.hero {
+  //  min-height: 400px;
+   background-color: $foot-head-color;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../img/HeaderMobil.jpg);
+ 
+     background-size: cover;
+     background-repeat: no-repeat;
+     padding-top: 118px;
+     padding-bottom: 118px;
+
+    text-align: center; 
+        
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    
+      background-image: url(../img/HeaderMobil@2x.jpg);
+    }}
+  
+
+  @media screen and (min-width: $tablet) {
+    .hero{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../img/HeaderTablet.jpg);
+ 
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../img/HeaderTablet@2x.jpg);
+    }
+  } }
+    
+  @media screen and (min-width: $desktop) {
+    .hero{
+       background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../img/HeaderDesktop.jpg);
+ 
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) 
+     {
+      background-image: url(../img/HeaderDesktop@2x.jpg);
+    }
+}
+  }
+
+    
+
+.hero-title {
+  text-align: center;
+    color: $white-color;
+
+    margin-bottom: 40px;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+      color: $white-color;
+    }}
+
+
+.hero-main
+{
+    text-align: center;
+}
+ 

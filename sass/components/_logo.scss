@@ -1,0 +1,14 @@
+.logo {
+    @extend %link;
+
+    color: #2196f3;
+
+    font-family: Raleway, sant-serif;
+    font-weight: 700px;
+    font-size: 26px;
+    line-height: 1,19;
+}
+
+.logo-element {
+    color: $foot-head-color;
+}
