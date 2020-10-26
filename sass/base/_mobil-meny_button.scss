@@ -1,8 +1,10 @@
 .menu-button {
-    display: inline-flex;
+    //display: inline-flex;
+    display: block;
     margin: 0;
     padding: 0;
-    margin-left: 287px;
+    margin-left: auto;
+    //margin-left: 287px;
     margin-top: 21px;
     margin-bottom:  21px;
     background-color: transparent;
@@ -13,7 +15,9 @@
         display: none;
     }
 }
-
+.menu-button.is-open .icon-menu{
+    display: none;
+}
 .menu-button.is-open .icon-cross{
     display: block;
     
@@ -21,25 +25,22 @@
 .menu-button .icon-cross{
     display: none;
     border: none;
-    :hover &{
-        fill: $brand-color
+}
+.menu-button:hover .icon-cross{
+        fill: $brand-color;
     }
-}
-.menu-button.is-open .icon-menu{
-    display: none;
-}
+
+
 .page-header {
     position: relative;}
 .mobile-meny{    
     background-color: $white-color;
-    padding: 60px 0;
-
-
+    padding: 0 0; 
     @media screen and (max-width: 767px)
         {
     display: none;
      position: absolute;
-     //padding: 60px 140px;
+     padding: 60px 0; 
    
      top: 100%;
      left: 0;
@@ -47,6 +48,8 @@
      height: 453;
       &.is-open {
      display: block;
+     z-index: 999;
+     
        }
     }
     @media screen and (min-width: 768px)
@@ -57,8 +60,9 @@
             flex-grow: 1;        
     }
 }
-.menu-button:hover .icon-menu {
-border: none;
-fill:  $brand-color;
+
+.menu-button:hover .icon-menu
+{
+    fill: #2196F3;
 }
 

@@ -149,12 +149,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .menu-button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: block;
   margin: 0;
   padding: 0;
-  margin-left: 287px;
+  margin-left: auto;
   margin-top: 21px;
   margin-bottom: 21px;
   background-color: transparent;
@@ -167,6 +165,10 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .menu-button.is-open .icon-cross {
   display: block;
 }
@@ -176,12 +178,8 @@ h1, h2, h3, h4, h5, h6, p {
   border: none;
 }
 
-:hover .menu-button .icon-cross {
+.menu-button:hover .icon-cross {
   fill: #2196F3;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
 }
 
 .page-header {
@@ -190,13 +188,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 .mobile-meny {
   background-color: #FFFFFF;
-  padding: 60px 0;
+  padding: 0 0;
 }
 
 @media screen and (max-width: 767px) {
   .mobile-meny {
     display: none;
     position: absolute;
+    padding: 60px 0;
     top: 100%;
     left: 0;
     width: 100%;
@@ -204,6 +203,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .mobile-meny.is-open {
     display: block;
+    z-index: 999;
   }
 }
 
@@ -224,7 +224,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .menu-button:hover .icon-menu {
-  border: none;
   fill: #2196F3;
 }
 
@@ -881,7 +880,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .team__describing-members {
-  margin: 30px 32px;
+  padding: 30px 0;
 }
 
 .team__name-members {
@@ -1349,20 +1348,20 @@ h1, h2, h3, h4, h5, h6, p {
   background: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio-gallery__overlay-text {
-  font-size: 18px;
-  line-height: 1.55;
-  color: var(--white-color);
-}
-
-.portfolio-item:hover .portfolio-gallery__overlay {
+.portfolio-gallery__list-item:hover {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
 
+.portfolio-gallery__overlay-text {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #FFFFFF;
+}
+
 .portfolio-gallery__description-text {
   margin-top: 4px;
-  color: var(--main-color);
+  color: #757575;
   font-size: 16px;
   line-height: 1.87;
 }
@@ -1372,7 +1371,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .portfolio-gallery__description-title {
-  color: var(--titel-color);
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
