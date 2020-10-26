@@ -191,7 +191,6 @@ h1, h2, h3, h4, h5, h6, p {
   .mobile-meny {
     display: none;
     position: absolute;
-    padding: 60px 140px;
     top: 100%;
     left: 0;
     width: 100%;
@@ -245,6 +244,10 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-nav {
+  text-align: center;
 }
 
 @media screen and (min-width: 767px) {
