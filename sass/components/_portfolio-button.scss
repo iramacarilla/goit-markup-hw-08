@@ -40,4 +40,8 @@
 }
 .meny-portfolio__button {
     margin-right: 8px;
+    &:not(:nth-last-child(-n+2))
+    {
+        margin-bottom: 15px;
+    }
 }

@@ -218,6 +218,10 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.icon-menu:hover {
+  border: transparent;
+}
+
 .logo {
   color: #2196f3;
   font-family: Raleway, sant-serif;
@@ -1254,5 +1258,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .meny-portfolio__button {
   margin-right: 8px;
+}
+
+.meny-portfolio__button:not(:nth-last-child(-n+2)) {
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=main.css.map */

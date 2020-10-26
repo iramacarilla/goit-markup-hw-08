@@ -13,8 +13,15 @@
 <body>
     <header class="page-header">
         <div class="header container">
-            <nav class="main-nav">
             <a lang="en" href="./index.html" aria-label="Логотип WebStudio" class="logo link"  >Web<span class="logo-element" >Studio</span></a>
+            <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="mobile-meny" data-menu-button>
+                <svg width= 24px height= 16px aria-label="Переключатель мобильного меню">
+                    <use class="icon-cross" href="./img/CloseMeny.svg#icon-close_24px" >  </use>
+                    <use class="icon-menu" href="./img/CloseMeny.svg#icon-menu_24px">  </use>
+                    
+                </svg>  </button>
+                <div class="mobile-meny is-open" id="mobile-meny" data-menu>
+            <nav class="main-nav">   
             <ul class="main-meny list">
                 <li class="main-meny__item"> <a href="./index.html" class="main-meny__link link">Студия</a> </li>
                 <li class="main-meny__item" > <a href="./portfolio.html" class="main-meny__link link current" >Портфолио</a> </li>
@@ -44,6 +51,7 @@
                 </ul>
           </address>
         </div>
+    </div>
         </header>
         <!--MAIN-->
     <main>
@@ -274,6 +282,7 @@
     </div>
 </div>
     </footer>
-   
+    <script src="./js/modal.js"></script>
+    <script src="./js/meny.js"></script>
 </body>
 </html>
