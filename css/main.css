@@ -471,6 +471,8 @@ h1, h2, h3, h4, h5, h6, p {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/HeaderDesktop.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/HeaderDesktop.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
